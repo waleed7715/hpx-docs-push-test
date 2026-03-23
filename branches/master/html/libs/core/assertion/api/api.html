@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-theme="auto">
 
   <head>
     <meta charset="utf-8" />
@@ -14,7 +14,7 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "auto";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
@@ -58,7 +58,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="auto">
 
   
   
@@ -1224,7 +1224,7 @@ document.write(`
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv4N3hpx9assertion17assertion_handlerE">
-<span id="_CPPv3N3hpx9assertion17assertion_handlerE"></span><span id="_CPPv2N3hpx9assertion17assertion_handlerE"></span><span class="target" id="api_8hpp_1ad5bcc9d58f02ced5234d74cd3bd5b1b6"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">assertion_handler</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="../../algorithms/api/adjacent_difference.html#_CPPv43hpx" title="hpx"><span class="n"><span class="pre">hpx</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="source_location.html#_CPPv4N3hpx15source_locationE" title="hpx::source_location"><span class="n"><span class="pre">source_location</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n"><span class="pre">loc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../../coroutines/api/thread_id_type.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N3hpx9assertion17assertion_handlerE" title="Permalink to this definition">#</a><br /></dt>
+<span id="_CPPv3N3hpx9assertion17assertion_handlerE"></span><span id="_CPPv2N3hpx9assertion17assertion_handlerE"></span><span class="target" id="api_8hpp_1ad5bcc9d58f02ced5234d74cd3bd5b1b6"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">assertion_handler</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="../../algorithms/api/adjacent_difference.html#_CPPv43hpx" title="hpx"><span class="n"><span class="pre">hpx</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">source_location</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n"><span class="pre">loc</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../../coroutines/api/thread_id_type.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N3hpx9assertion17assertion_handlerE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>The signature for an assertion handler. </p>
 </dd></dl>
 
@@ -1297,7 +1297,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The STE||AR Group
+By The HPX project
 </p>
 
   </div>
@@ -1306,7 +1306,7 @@ By The STE||AR Group
     
   <p class="copyright">
     
-      © Copyright 2008-2026, The STE||AR Group.
+      © Copyright 2026, HPX Project, a Series of LF Projects, LLC.
       <br/>
     
   </p>
@@ -1315,7 +1315,7 @@ By The STE||AR Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 17, 2026.
+  Last updated on Mar 23, 2026.
   <br/>
 </p>
   </div>

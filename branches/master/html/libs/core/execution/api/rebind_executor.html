@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-theme="auto">
 
   <head>
     <meta charset="utf-8" />
@@ -14,7 +14,7 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "auto";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
@@ -58,7 +58,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="auto">
 
   
   
@@ -1302,7 +1302,7 @@ document.write(`
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp">
-<span class="target" id="structhpx_1_1execution_1_1experimental_1_1create__rebound__policy__t_1aef315e5a85a1de8429321aa315d5d5de"></span><span class="sig-name descname"><span class="pre">Executor</span> <span class="pre">&amp;&amp;const</span> <span class="pre">exec</span>&#160; <span class="pre">{using</span> <span class="pre">parameters_type</span> <span class="pre">=</span> <span class="pre">std::decay_t&lt;ExPolicy&gt;::parameters_type</span></span></dt>
+<span class="target" id="structhpx_1_1execution_1_1experimental_1_1create__rebound__policy__t_1aef315e5a85a1de8429321aa315d5d5de"></span><span class="sig-name descname"><span class="pre">Executor</span> <span class="pre">&amp;&amp;const</span> <span class="pre">exec</span>&#160; <span class="pre">{using</span> <span class="pre">parameters_type</span> <span class="pre">=extract_executor_parameters_t&lt;std::decay_t&lt;ExPolicy&gt;&gt;</span></span></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
@@ -1387,7 +1387,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The STE||AR Group
+By The HPX project
 </p>
 
   </div>
@@ -1396,7 +1396,7 @@ By The STE||AR Group
     
   <p class="copyright">
     
-      © Copyright 2008-2026, The STE||AR Group.
+      © Copyright 2026, HPX Project, a Series of LF Projects, LLC.
       <br/>
     
   </p>
@@ -1405,7 +1405,7 @@ By The STE||AR Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 17, 2026.
+  Last updated on Mar 23, 2026.
   <br/>
 </p>
   </div>

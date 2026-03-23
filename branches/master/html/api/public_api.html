@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-theme="auto">
 
   <head>
     <meta charset="utf-8" />
@@ -14,7 +14,7 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "auto";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
@@ -58,7 +58,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="auto">
 
   
   
@@ -2961,7 +2961,7 @@ C++ standard library header <a class="reference external" href="http://en.cppref
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../libs/core/assertion/api/source_location.html#_CPPv4N3hpx15source_locationE" title="hpx::source_location"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hpx::source_location</span></code></a></p></td>
+<tr class="row-even"><td><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hpx::source_location</span></code></p></td>
 <td><p><a class="reference external" href="http://en.cppreference.com/w/cpp/utility/source_location">std::source_location</a></p></td>
 </tr>
 </tbody>
@@ -3617,7 +3617,7 @@ details on implicitly starting the <em>HPX</em> runtime.</p>
   <div class="footer-item">
     
 <p class="component-author">
-By The STE||AR Group
+By The HPX project
 </p>
 
   </div>
@@ -3626,7 +3626,7 @@ By The STE||AR Group
     
   <p class="copyright">
     
-      © Copyright 2008-2026, The STE||AR Group.
+      © Copyright 2026, HPX Project, a Series of LF Projects, LLC.
       <br/>
     
   </p>
@@ -3635,7 +3635,7 @@ By The STE||AR Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 17, 2026.
+  Last updated on Mar 23, 2026.
   <br/>
 </p>
   </div>
