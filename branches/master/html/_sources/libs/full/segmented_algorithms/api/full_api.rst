@@ -27,6 +27,7 @@ See :ref:`public_api` for a list of names and headers that are part of the publi
    /libs/full/segmented_algorithms/api/adjacent_difference.rst
    /libs/full/segmented_algorithms/api/exclusive_scan.rst
    /libs/full/segmented_algorithms/api/replace.rst
+   /libs/full/segmented_algorithms/api/is_sorted.rst
    /libs/full/segmented_algorithms/api/transform.rst
    /libs/full/segmented_algorithms/api/adjacent_find.rst
    /libs/full/segmented_algorithms/api/for_each.rst
