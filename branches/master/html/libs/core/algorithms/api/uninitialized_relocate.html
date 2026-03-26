@@ -942,6 +942,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/adjacent_difference.html">hpx/parallel/segmented_algorithms/adjacent_difference.hpp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/exclusive_scan.html">hpx/parallel/segmented_algorithms/exclusive_scan.hpp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/replace.html">hpx/parallel/segmented_algorithms/replace.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/is_sorted.html">hpx/parallel/segmented_algorithms/is_sorted.hpp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/transform.html">hpx/parallel/segmented_algorithms/transform.hpp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/adjacent_find.html">hpx/parallel/segmented_algorithms/adjacent_find.hpp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../full/segmented_algorithms/api/for_each.html">hpx/parallel/segmented_algorithms/for_each.hpp</a></li>
@@ -1268,6 +1269,10 @@ The assignments in the parallel <em>uninitialized_relocate</em> algorithm invoke
 <p class="admonition-title">Note</p>
 <p>Declare a type as “trivially relocatable” using the <code class="docutils literal notranslate"><span class="pre">HPX_DECLARE_TRIVIALLY_RELOCATABLE</span></code> macros found in &lt;hpx/type_support/is_trivially_relocatable.hpp&gt;.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parallel execution requires both <em>first</em> and <em>dest</em> to be contiguous iterators. If either iterator is non-contiguous, the algorithm cannot determine whether the source and destination ranges overlap, and will silently fall back to sequential execution regardless of the execution policy provided.</p>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Template Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1343,6 +1348,10 @@ The assignments in the parallel <em>uninitialized_relocate_backward</em> algorit
 <p class="admonition-title">Note</p>
 <p>Declare a type as “trivially relocatable” using the <code class="docutils literal notranslate"><span class="pre">HPX_DECLARE_TRIVIALLY_RELOCATABLE</span></code> macros found in &lt;hpx/type_support/is_trivially_relocatable.hpp&gt;.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parallel execution requires both <em>first</em> and <em>dest_last</em> to be contiguous iterators. If either iterator is non-contiguous, the algorithm cannot determine whether the source and destination ranges overlap, and will silently fall back to sequential execution regardless of the execution policy provided.</p>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Template Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1414,6 +1423,10 @@ The assignments in the parallel <em>uninitialized_relocate_n</em> algorithm invo
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Declare a type as “trivially relocatable” using the <code class="docutils literal notranslate"><span class="pre">HPX_DECLARE_TRIVIALLY_RELOCATABLE</span></code> macros found in &lt;hpx/type_support/is_trivially_relocatable.hpp&gt;.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parallel execution requires both <em>first</em> and <em>dest</em> to be contiguous iterators. If either iterator is non-contiguous, the algorithm cannot determine whether the source and destination ranges overlap, and will silently fall back to sequential execution regardless of the execution policy provided.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Template Parameters</dt>
@@ -1510,7 +1523,7 @@ By The HPX project
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 23, 2026.
+  Last updated on Mar 26, 2026.
   <br/>
 </p>
   </div>
